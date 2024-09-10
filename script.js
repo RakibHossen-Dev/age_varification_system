@@ -2,7 +2,9 @@ function isVarification() {
   let age = document.getElementById("age").value;
   age = Number(age);
 
-  if (age >= 18) {
+  if (age >= 150) {
+    document.getElementById("output").innerHTML = "Invalid Number";
+  } else if (age >= 18) {
     document.getElementById("output").innerHTML =
       "Welcome!😍,You are ready for passport";
   } else {
